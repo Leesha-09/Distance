@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class FallingObject {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Get user input
+        System.out.print("Enter time in seconds: ");
+        int time = scanner.nextInt();
+
+        // Calculate distance
+        float distance = (float) (0.5 * 9.81 * time * time);
+
+        // Print result
+        System.out.println("Distance fallen: " + distance + " meters");
+    }
+}
